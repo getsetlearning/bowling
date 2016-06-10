@@ -33,7 +33,7 @@ describeService('bowling', function(t) { with(t) {
     expect(game.score()).toEqual(20);
   });
 
-  it('should score a single spare correctly', function() {
+  fit('should score a single spare correctly', function() {
     rollSpare(game);
     game.roll(3);
     expect(game.score()).toEqual(13);

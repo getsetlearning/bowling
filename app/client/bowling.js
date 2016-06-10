@@ -2,9 +2,19 @@ angular.module('interview.service.bowling', [ ]).
 
 factory('bowling', [
   function() {
-    var service = { };
+    return function service() {
+      var game = { };
 
-    return service;
+      game.roll = function(pins) {
+
+      };
+
+      game.score = function() {
+
+      };
+
+      return game;
+    };
   }
 ]);
 
